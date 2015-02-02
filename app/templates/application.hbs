@@ -1,3 +1,6 @@
 <h1 id="title">gSchool Reddit</h1>
-
+<h3>Suggested Subreddits:</h3>
+{{#each subreddit in model}}
+  {{#link-to 'posts' subreddit}}{{subreddit}}{{/link-to}}
+{{/each}}
 {{outlet}}
